@@ -10,7 +10,7 @@
 <meta property="og:description" content="Featured at Jai Mahal Palace & Fairmont Jaipur. Royal mandaps, haldi decor, reception stages — fresh flowers, honest pricing.">
 <meta property="og:image" content="https://somilsharma2000.github.io/ambalal-flower-decor/images/hero-red-gold.jpg">
 <meta property="og:type" content="business.business">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🌹</text></svg>">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%236d1a2d'/%3E%3Ccircle cx='50' cy='50' r='48' fill='none' stroke='%23c9a227' stroke-width='3'/%3E%3Ctext x='50' y='64' font-family='Georgia,serif' font-size='38' fill='%23e8cf7a' text-anchor='middle'%3EAL%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"A.L. Florist (Ambalal Flower Decor)","alternateName":"Ambalal Flower Decor","description":"Destination wedding and event flower decoration in Jaipur — mandap, haldi, reception stage, corporate & festive decor, baraat car decoration. Trusted by wedding planners at Jai Mahal Palace and Fairmont Jaipur.","telephone":"+9197829995530","sameAs":["https://www.instagram.com/a.l.florist_jaipur/"],"address":{"@type":"PostalAddress","addressLocality":"Jaipur","addressRegion":"Rajasthan","addressCountry":"IN"},"areaServed":["Jaipur","Rajasthan","India"],"priceRange":"₹₹","openingHours":"Mo-Su 09:00-21:00"}
 </script>
@@ -51,7 +51,15 @@
   .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px}
   .card{background:#fff;border:1px solid #eadfce;border-radius:14px;padding:34px 28px;text-align:center;transition:transform .25s,box-shadow .25s}
   .card:hover{transform:translateY(-6px);box-shadow:0 14px 34px rgba(109,26,45,.12)}
-  .card .ico{font-size:38px;margin-bottom:12px}
+  .card .ico{width:60px;height:60px;margin:0 auto 14px;border-radius:50%;background:rgba(201,162,39,.14);display:flex;align-items:center;justify-content:center}
+  .card .ico svg{width:28px;height:28px;color:var(--maroon)}
+  .trust-badge svg.seal{width:14px;height:14px;color:var(--gold);vertical-align:-2px;margin-right:5px}
+  .ig-ico svg{width:20px;height:20px;color:var(--maroon);vertical-align:-5px}
+  .hero-urgency svg.bolt{width:14px;height:14px;color:#ffd98a;vertical-align:-2px;margin-right:2px}
+  .cta svg.cta-ico{width:18px;height:18px;color:#fff}
+  .wa-ico{width:20px;height:20px;color:#fff;vertical-align:-4px;margin-right:2px}
+  .wa-float svg.wa-ico-lg{width:28px;height:28px;color:#fff}
+  #success .check-ico{width:18px;height:18px;color:var(--maroon);vertical-align:-3px;margin-right:2px}
   .card h3{color:var(--maroon);font-size:21px;margin-bottom:10px}
   .card p{color:#7a6a60;font-size:15px}
   section.alt .card{background:var(--cream)}
@@ -167,6 +175,26 @@
 </script>
 </head>
 <body>
+<svg style="display:none" aria-hidden="true">
+  <symbol id="ico-mandap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V11a8 8 0 0 1 16 0v10"/><path d="M4 21h16"/><circle cx="12" cy="4.2" r="1.3" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="ico-haldi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.4"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.1 5.1l2.1 2.1M16.8 16.8l2.1 2.1M18.9 5.1l-2.1 2.1M7.2 16.8l-2.1 2.1"/></symbol>
+  <symbol id="ico-stage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4c3 4.5 3 8.5 0 12"/><path d="M21 4c-3 4.5-3 8.5 0 12"/><path d="M3 20h18"/><path d="M9 20V16h6v4"/></symbol>
+  <symbol id="ico-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 13.5 5 9a2 2 0 0 1 1.9-1.4h10.2A2 2 0 0 1 19 9l1.5 4.5"/><path d="M3 13.5h18v3.7a1 1 0 0 1-1 1h-.7a1 1 0 0 1-1-1v-.7H5.7v.7a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><circle cx="7.5" cy="18.2" r="1.3" fill="currentColor" stroke="none"/><circle cx="16.5" cy="18.2" r="1.3" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="ico-gate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V6.5a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1V21"/><path d="M9.5 21v-7.5h5V21"/></symbol>
+  <symbol id="ico-bouquet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7.3" r="2.5"/><circle cx="15" cy="7.3" r="2.5"/><circle cx="12" cy="10.6" r="2.5"/><path d="M12 13v8"/><path d="M8.7 21h6.6"/></symbol>
+  <symbol id="ico-festive" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M5.5 2.5l1.1 3.3 3.3 1.1-3.3 1.1-1.1 3.3-1.1-3.3-3.3-1.1 3.3-1.1z"/><path d="M17 11l1.3 3 3 1.3-3 1.3-1.3 3-1.3-3-3-1.3 3-1.3z"/><circle cx="18.5" cy="4.5" r="1.4"/></symbol>
+  <symbol id="ico-palace" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21v-9.5M9 21v-9.5M12 21V9M15 21v-9.5M19 21v-9.5"/><circle cx="12" cy="6" r="1.9"/><path d="M5 11.5 8 9M9 11.5l3-2M15 11.5l-3-2M19 11.5l-3-2"/></symbol>
+  <symbol id="ico-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a13.7 13.7 0 0 1 0 18"/><path d="M12 3a13.7 13.7 0 0 0 0 18"/></symbol>
+  <symbol id="ico-contact" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="10.2" r="3"/><path d="M6.3 18a6 6 0 0 1 11.4 0"/></symbol>
+  <symbol id="ico-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1"/><path d="M8 10.5h8M8 14.5h8M8 18.5h5"/></symbol>
+  <symbol id="ico-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 3.2"/></symbol>
+  <symbol id="ico-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2a1.5 1.5 0 0 1 1.5-.4l3.3 1a1.5 1.5 0 0 1 1 1.5v3a1.5 1.5 0 0 1-1.6 1.5C10.6 21.4 2.6 13.4 2.2 4.6A1.5 1.5 0 0 1 3.7 3h3a1.5 1.5 0 0 1 1.5 1l1 3.3a1.5 1.5 0 0 1-.4 1.5z"/></symbol>
+  <symbol id="ico-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-2.4a1.5 1.5 0 0 1 1.3-.7h2.4a1.5 1.5 0 0 1 1.3.7L16 7"/><circle cx="12" cy="13.5" r="3.4"/></symbol>
+  <symbol id="ico-bolt" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></symbol>
+  <symbol id="ico-seal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.3l2.1 1.5 2.6-.3.9 2.4 2.4.9-.3 2.6L21.2 12l-1.5 2.1.3 2.6-2.4.9-.9 2.4-2.6-.3L12 21.7l-2.1-1.5-2.6.3-.9-2.4-2.4-.9.3-2.6L2.8 12l1.5-2.1-.3-2.6 2.4-.9.9-2.4 2.6.3z"/><path d="M8.7 12.3l2.1 2.1 4.5-4.5"/></symbol>
+  <symbol id="ico-whatsapp" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.1 8.1 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-1.4-.6-2.3-1.4-3-2.6-.1-.2-.1-.4.1-.6.2-.2.5-.5.6-.7.1-.2.1-.4 0-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9 1-.9 2.3 0 1.3 1 2.6 1.1 2.8.1.2 1.9 3 4.6 4.1 2.3.9 2.3.6 2.7.5.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></symbol>
+  <symbol id="ico-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9.5h18"/><path d="M8 3v4M16 3v4"/><path d="M8 13.5h2M8 17.5h2M14 13.5h2M14 17.5h2"/></symbol>
+</svg>
 
 <nav>
   <div class="logo">A.L. Florist <span>Ambalal Flower Decor · Jaipur</span></div>
@@ -186,10 +214,10 @@
     <span class="tag">✿ A.L. Florist · Destination Weddings · Jaipur</span>
     <h1>Where every wedding <em>blooms</em> into a memory</h1>
     <p>Trusted by wedding planners at <b>Jai Mahal Palace</b> &amp; <b>Fairmont Jaipur</b> — we design royal mandaps, haldi and reception decor with fresh flowers, honest pricing and on-time delivery, every single time.</p>
-    <a class="cta" href="#book">🌸 Check Your Date</a>
+    <a class="cta" href="#book"><svg class="cta-ico"><use href="#ico-calendar"/></svg> Check Your Date</a>
     <a class="cta ghost" href="#work">See Real Work</a>
     <button class="reel-btn" onclick="openReel()" aria-label="Play the real Jai Mahal Palace wedding reel">▶ Watch the real reel</button>
-    <div class="hero-urgency">⚡ Nov–Feb palace dates fill 6–9 months ahead — couples book early, ask us today.</div>
+    <div class="hero-urgency"><svg class="bolt"><use href="#ico-bolt"/></svg> Nov–Feb palace dates fill 6–9 months ahead — couples book early, ask us today.</div>
     <div class="stats">
       <div><b>80+</b><span>Real Events on Instagram</span></div>
       <div><b>5+</b><span>Years in Jaipur</span></div>
@@ -207,13 +235,13 @@
       <p>One team for your whole wedding week — so the flowers, colours and style stay consistent from roka to vidaai.</p>
     </div>
     <div class="grid3">
-      <div class="card"><div class="ico">🌸</div><h3>Wedding Mandap</h3><p>Grand floral mandaps in rose, marigold, jasmine &amp; orchid themes — built to your venue and budget.</p></div>
-      <div class="card"><div class="ico">💛</div><h3>Haldi &amp; Mehndi</h3><p>Vibrant marigold hangings, brass pots and traditional Rajasthani touches for your morning functions.</p></div>
-      <div class="card"><div class="ico">🕯️</div><h3>Reception &amp; Stage</h3><p>Elegant stage backdrops, entry gates and table centrepieces in pastel or royal palettes.</p></div>
-      <div class="card"><div class="ico">🚗</div><h3>Baraat Car Decor</h3><p>Hand-woven garlands and floral trimmings for the wedding car — photo-ready from every angle.</p></div>
-      <div class="card"><div class="ico">🏹</div><h3>Entry Gates &amp; Walkways</h3><p>Floral arches, umbrella ceilings and pathways that make every entrance feel grand.</p></div>
-      <div class="card"><div class="ico">💐</div><h3>Bouquets &amp; Garlands</h3><p>Bedside bouquets, varmala, and pooja flower arrangements delivered fresh on the day.</p></div>
-      <div class="card"><div class="ico">🎉</div><h3>Corporate &amp; Festive Decor</h3><p>Product launches, promotions, cultural shows &amp; festive setups (Diwali, corporate events) — same floral craftsmanship, event-day reliability.</p></div>
+      <div class="card"><div class="ico"><svg><use href="#ico-mandap"/></svg></div><h3>Wedding Mandap</h3><p>Grand floral mandaps in rose, marigold, jasmine &amp; orchid themes — built to your venue and budget.</p></div>
+      <div class="card"><div class="ico"><svg><use href="#ico-haldi"/></svg></div><h3>Haldi &amp; Mehndi</h3><p>Vibrant marigold hangings, brass pots and traditional Rajasthani touches for your morning functions.</p></div>
+      <div class="card"><div class="ico"><svg><use href="#ico-stage"/></svg></div><h3>Reception &amp; Stage</h3><p>Elegant stage backdrops, entry gates and table centrepieces in pastel or royal palettes.</p></div>
+      <div class="card"><div class="ico"><svg><use href="#ico-car"/></svg></div><h3>Baraat Car Decor</h3><p>Hand-woven garlands and floral trimmings for the wedding car — photo-ready from every angle.</p></div>
+      <div class="card"><div class="ico"><svg><use href="#ico-gate"/></svg></div><h3>Entry Gates &amp; Walkways</h3><p>Floral arches, umbrella ceilings and pathways that make every entrance feel grand.</p></div>
+      <div class="card"><div class="ico"><svg><use href="#ico-bouquet"/></svg></div><h3>Bouquets &amp; Garlands</h3><p>Bedside bouquets, varmala, and pooja flower arrangements delivered fresh on the day.</p></div>
+      <div class="card"><div class="ico"><svg><use href="#ico-festive"/></svg></div><h3>Corporate &amp; Festive Decor</h3><p>Product launches, promotions, cultural shows &amp; festive setups (Diwali, corporate events) — same floral craftsmanship, event-day reliability.</p></div>
     </div>
   </div>
 </section>
@@ -229,11 +257,11 @@
 
     <div class="trust-strip">
       <span class="trust-label">Trusted by planners &amp; venues</span>
-      <span class="trust-badge">🏛️ Jai Mahal Palace</span>
-      <span class="trust-badge">🌴 Fairmont Jaipur</span>
-      <span class="trust-badge">💍 The Wedding Art</span>
-      <span class="trust-badge">🎪 The Stagecraft</span>
-      <span class="trust-badge">📸 Jagdish Studio</span>
+      <span class="trust-badge"><svg class="seal"><use href="#ico-seal"/></svg>Jai Mahal Palace</span>
+      <span class="trust-badge"><svg class="seal"><use href="#ico-seal"/></svg>Fairmont Jaipur</span>
+      <span class="trust-badge"><svg class="seal"><use href="#ico-seal"/></svg>The Wedding Art</span>
+      <span class="trust-badge"><svg class="seal"><use href="#ico-seal"/></svg>The Stagecraft</span>
+      <span class="trust-badge"><svg class="seal"><use href="#ico-seal"/></svg>Jagdish Studio</span>
     </div>
 
     <div class="ig-grid">
@@ -253,7 +281,7 @@
     </div>
 
     <a class="follow-strip" href="https://www.instagram.com/a.l.florist_jaipur/" target="_blank" rel="noopener">
-      <span class="ig-ico">📷</span>
+      <span class="ig-ico"><svg><use href="#ico-camera"/></svg></span>
       <span>Follow <b>@a.l.florist_jaipur</b> for our latest weddings, corporate &amp; festive decor</span>
       <span class="arrow">→</span>
     </a>
@@ -332,9 +360,9 @@
       <p>Most Jaipur decorators only do local functions. A.L. Florist has styled weddings for out-of-town &amp; NRI couples at 5-star venues — and still shows up personally for a ₹15,000 haldi. Ask us on WhatsApp for direct references from recent weddings — honest feedback from real clients, no filters.</p>
     </div>
     <div class="grid3">
-      <div class="card"><div class="ico">🏛️</div><h3>Palace-Grade Styling</h3><p>Floral design experience at heritage 5-star venues like Jai Mahal Palace — the same craftsmanship, brought to every Jaipur wedding we do.</p></div>
-      <div class="card"><div class="ico">🌍</div><h3>Destination Wedding Ready</h3><p>Experienced with NRI &amp; out-of-city couples — coordinating with planners, photographers and venues you've never met, remotely.</p></div>
-      <div class="card"><div class="ico">🤝</div><h3>One Point of Contact</h3><p>Talk directly to Mohit Saini on WhatsApp — no call centre, no juniors. He's on-site for setup, every time.</p></div>
+      <div class="card"><div class="ico"><svg><use href="#ico-palace"/></svg></div><h3>Palace-Grade Styling</h3><p>Floral design experience at heritage 5-star venues like Jai Mahal Palace — the same craftsmanship, brought to every Jaipur wedding we do.</p></div>
+      <div class="card"><div class="ico"><svg><use href="#ico-globe"/></svg></div><h3>Destination Wedding Ready</h3><p>Experienced with NRI &amp; out-of-city couples — coordinating with planners, photographers and venues you've never met, remotely.</p></div>
+      <div class="card"><div class="ico"><svg><use href="#ico-contact"/></svg></div><h3>One Point of Contact</h3><p>Talk directly to Mohit Saini on WhatsApp — no call centre, no juniors. He's on-site for setup, every time.</p></div>
     </div>
   </div>
 </section>
@@ -385,9 +413,9 @@
       <div class="divider"></div>
     </div>
     <div class="grid3">
-      <div class="card"><div class="ico">📋</div><h3>Clear Rate Card</h3><p>Transparent per-function rates shared upfront on WhatsApp — quote your clients confidently, no back-and-forth on pricing.</p></div>
-      <div class="card"><div class="ico">⏱️</div><h3>Setup Reliability</h3><p>Palace-hotel timelines respected — we coordinate with your run-sheet, venue teams and other vendors. Florals delivered by @a.l.florist_jaipur are already tagged in real palace weddings.</p></div>
-      <div class="card"><div class="ico">📞</div><h3>One Direct Line</h3><p>Mohit Saini, +91 97829 95530 — decision-maker on the phone, not a junior. Site visits and last-minute briefs handled.</p></div>
+      <div class="card"><div class="ico"><svg><use href="#ico-clipboard"/></svg></div><h3>Clear Rate Card</h3><p>Transparent per-function rates shared upfront on WhatsApp — quote your clients confidently, no back-and-forth on pricing.</p></div>
+      <div class="card"><div class="ico"><svg><use href="#ico-clock"/></svg></div><h3>Setup Reliability</h3><p>Palace-hotel timelines respected — we coordinate with your run-sheet, venue teams and other vendors. Florals delivered by @a.l.florist_jaipur are already tagged in real palace weddings.</p></div>
+      <div class="card"><div class="ico"><svg><use href="#ico-phone"/></svg></div><h3>One Direct Line</h3><p>Mohit Saini, +91 97829 95530 — decision-maker on the phone, not a junior. Site visits and last-minute briefs handled.</p></div>
     </div>
     <p class="note" style="text-align:center;margin-top:36px">Planners we've delivered florals with: <b>The Wedding Art</b> · <b>The Stagecraft</b> — photos by Jagdish Studio on our Instagram.</p>
   </div>
@@ -399,7 +427,7 @@
       <span class="tag">Check Availability</span>
       <h2>Is your date free? Find out in 30 seconds</h2>
       <div class="divider"></div>
-      <p>Fill the form — your enquiry comes straight to our WhatsApp with all details. Same-day quote guaranteed. 🌹</p>
+      <p>Fill the form — your enquiry comes straight to our WhatsApp with all details. Same-day quote guaranteed.</p>
     </div>
     <div class="form-card">
       <form id="enquiryForm">
@@ -442,28 +470,28 @@
         <input type="text" id="venue" placeholder="e.g. Fairmont, Kukas or Malviya Nagar">
         <label>Any details</label>
         <textarea id="message" rows="3" placeholder="e.g. Rajasthani theme mandap, 300 guests..."></textarea>
-        <button class="btn-form" type="submit">💬 Send Enquiry on WhatsApp</button>
+        <button class="btn-form" type="submit"><svg class="wa-ico"><use href="#ico-whatsapp"/></svg> Send Enquiry on WhatsApp</button>
       </form>
       <div class="success" id="success">
-        ✅ <b>Dhanyavaad!</b> WhatsApp khul raha hai — bas Send daba dein, hum turant reply karenge. 🌹
+        <svg class="check-ico"><use href="#ico-seal"/></svg> <b>Dhanyavaad!</b> WhatsApp khul raha hai — bas Send daba dein, hum turant reply karenge.
       </div>
     </div>
   </div>
 </section>
 
 <div class="banner">
-  <h2>Nov–Feb dates fill 6–9 months early 🌹</h2>
+  <h2>Nov–Feb dates fill 6–9 months early</h2>
   <p>Jaipur's peak wedding season is the busiest in India. Check your date today before someone takes it.</p>
-  <a class="cta" href="https://wa.me/9197829995530?text=Hi%2C%20I%20want%20to%20check%20availability%20for%20my%20wedding%20date.">💬 WhatsApp us at +91 97829 95530</a>
+  <a class="cta" href="https://wa.me/9197829995530?text=Hi%2C%20I%20want%20to%20check%20availability%20for%20my%20wedding%20date."><svg class="cta-ico"><use href="#ico-whatsapp"/></svg> WhatsApp us at +91 97829 95530</a>
 </div>
 
 <footer>
   <div class="fl">Ambalal Flower Decor</div>
   <div>Wedding &amp; Event Flower Decoration · Jaipur, Rajasthan</div>
-  <div style="margin-top:8px">📞 <a href="tel:+9197829995530">+91 97829 95530</a> · Serving all of Jaipur including Kukas, Chomu &amp; Sikar Road</div>
+  <div style="margin-top:8px"><svg style="width:14px;height:14px;color:var(--gold-light);vertical-align:-2px;margin-right:3px"><use href="#ico-phone"/></svg><a href="tel:+9197829995530">+91 97829 95530</a> · Serving all of Jaipur including Kukas, Chomu &amp; Sikar Road</div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/9197829995530" aria-label="WhatsApp">💬</a>
+<a class="wa-float" href="https://wa.me/9197829995530" aria-label="WhatsApp"><svg class="wa-ico-lg"><use href="#ico-whatsapp"/></svg></a>
 
 <div class="reel-modal" id="reelModal" onclick="closeReel(event)" role="dialog" aria-label="Real wedding reel from Jai Mahal Palace">
   <button class="close" onclick="closeReel(event)" aria-label="Close">×</button>
