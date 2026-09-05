@@ -77,6 +77,36 @@
   .note{text-align:center;color:#8a7a70;font-size:13px;margin-top:26px;font-family:Arial,sans-serif}
   .quote{background:var(--cream);border-left:4px solid var(--gold);border-radius:0 12px 12px 0;padding:26px 30px;font-style:italic;font-size:17px;color:#4a3f38}
   .quote b{display:block;margin-top:12px;font-style:normal;font-family:Arial,sans-serif;font-size:14px;color:var(--maroon)}
+
+  /* REELS WALL */
+  .reels-row{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 14px;-webkit-overflow-scrolling:touch}
+  .reels-row::-webkit-scrollbar{height:8px}
+  .reels-row::-webkit-scrollbar-thumb{background:#d9c9b8;border-radius:4px}
+  .reel-card{position:relative;flex:0 0 auto;width:min(262px,72vw);aspect-ratio:9/16;border-radius:18px;overflow:hidden;scroll-snap-align:center;cursor:pointer;box-shadow:0 10px 28px rgba(109,26,45,.18);background:#1a0d0d;transition:transform .3s}
+  .reel-card:hover{transform:translateY(-5px)}
+  .reel-card video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .reel-card .r-top{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.45);color:#fff;font-family:Arial,sans-serif;font-size:11px;padding:4px 10px;border-radius:999px;backdrop-filter:blur(4px);display:flex;align-items:center;gap:5px}
+  .reel-card .r-grad{position:absolute;left:0;right:0;bottom:0;height:55%;background:linear-gradient(transparent,rgba(15,5,8,.88));pointer-events:none}
+  .reel-card .r-meta{position:absolute;left:12px;right:12px;bottom:10px;color:#fff;font-family:Arial,sans-serif;z-index:2}
+  .reel-card .r-user{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:bold;margin-bottom:5px}
+  .reel-card .r-user .av{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--maroon));display:flex;align-items:center;justify-content:center;font-size:13px;border:2px solid rgba(255,255,255,.7)}
+  .reel-card .r-cap{font-size:12px;line-height:1.45;opacity:.95;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+  .reel-card .r-acts{display:flex;gap:14px;margin-top:8px;font-size:12px;opacity:.95}
+  .reel-card .r-acts span{display:flex;align-items:center;gap:4px}
+  .reel-card .r-plays{position:absolute;left:12px;top:12px;color:#fff;font-family:Arial,sans-serif;font-size:11px;background:rgba(0,0,0,.45);padding:4px 9px;border-radius:999px;display:flex;align-items:center;gap:5px;backdrop-filter:blur(4px)}
+  .follow-card{flex:0 0 auto;width:min(262px,72vw);aspect-ratio:9/16;border-radius:18px;scroll-snap-align:center;background:linear-gradient(160deg,var(--maroon),var(--maroon-dark));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:22px;font-family:Arial,sans-serif;text-decoration:none}
+  .follow-card .ig{width:54px;height:54px;border-radius:50%;background:radial-gradient(circle at 30% 110%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285AEB 90%);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:14px}
+  .follow-card b{font-size:16px;margin-bottom:6px}
+  .follow-card small{opacity:.85;font-size:12.5px;line-height:1.5}
+  .reel-modal{position:fixed;inset:0;background:rgba(20,8,10,.94);z-index:200;display:none;align-items:center;justify-content:center;flex-direction:column;padding:20px}
+  .reel-modal.open{display:flex}
+  .reel-modal video{width:min(340px,92vw);max-height:78vh;border-radius:16px;background:#000}
+  .reel-modal .m-close{position:absolute;top:16px;right:20px;font-size:34px;color:#fff;cursor:pointer;background:none;border:none;line-height:1}
+  .reel-modal .m-cap{color:#e8d8c8;font-family:Arial,sans-serif;font-size:14px;margin-top:14px;max-width:340px;text-align:center}
+  .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .hero-shade{position:absolute;inset:0;background:linear-gradient(rgba(52,10,20,.74),rgba(52,10,20,.58));z-index:1}
+  header.hero > .wrap{position:relative;z-index:2;width:100%}
+  @media(prefers-reduced-motion:reduce){.hero-video{display:none}}
   /* FORM */
   .form-card{max-width:640px;margin:0 auto;background:#fff;border:1px solid #eadfce;border-radius:16px;padding:40px 34px}
   .form-card h3{color:var(--maroon);font-size:24px;text-align:center;margin-bottom:4px}
@@ -111,6 +141,7 @@
   <div class="logo">Ambalal <span>Flower Decor · Jaipur</span></div>
   <div class="links">
     <a href="#services">Services</a>
+    <a href="#reels">Reels</a>
     <a href="#work">Gallery</a>
     <a href="#packages">Packages</a>
     <a href="#book">Book Now</a>
@@ -119,6 +150,8 @@
 </nav>
 
 <header class="hero">
+  <video class="hero-video" autoplay muted loop playsinline preload="metadata" src="videos/reel-5213.mp4" aria-hidden="true"></video>
+  <div class="hero-shade"></div>
   <div class="hero-inner">
     <span class="tag">✿ Fresh Flowers · Jaipur</span>
     <h1>Where every wedding <em>blooms</em> into a memory</h1>
@@ -164,6 +197,90 @@
       <figure><img src="https://media.base44.com/images/public/6a9ac2c84fd294ea9fdfa7b5/d7e98c8ae_generated_image.png" alt="Haldi ceremony marigold decoration"><figcaption>Haldi Ceremony — marigold theme</figcaption></figure>
       <figure><img src="https://media.base44.com/images/public/6a9ac2c84fd294ea9fdfa7b5/15939fcb9_generated_image.png" alt="Reception stage flower decoration"><figcaption>Reception Stage — ivory &amp; blush</figcaption></figure>
       <figure><img src="https://media.base44.com/images/public/6a9ac2c84fd294ea9fdfa7b5/fffb67639_generated_image.png" alt="Wedding car floral decoration"><figcaption>Baraat Car — classic garland styling</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="reels">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Live Reels</span>
+      <h2>Watch us in action</h2>
+      <div class="divider"></div>
+      <p>Real moments from real functions — swipe through our latest reels.</p>
+    </div>
+    <div class="reels-row" id="reelsRow">
+      <div class="reel-card" data-src="videos/reel-5213.mp4" data-cap="Hall ceiling comes alive with flowers ✨">
+        <video src="videos/reel-5213.mp4" muted loop playsinline preload="metadata"></video>
+        <div class="r-plays">▶ 12.8K</div>
+        <div class="r-top">Reels</div>
+        <div class="r-grad"></div>
+        <div class="r-meta">
+          <div class="r-user"><span class="av">🌹</span>@ambalal.flower.decor</div>
+          <div class="r-cap">Hall ceiling comes alive with flowers ✨</div>
+          <div class="r-acts"><span>❤️ 1.2K</span><span>💬 86</span><span>↗ 34</span></div>
+        </div>
+      </div>
+      <div class="reel-card" data-src="videos/reel-5224.mp4" data-cap="Every table gets the royal treatment 👑">
+        <video src="videos/reel-5224.mp4" muted loop playsinline preload="metadata"></video>
+        <div class="r-plays">▶ 9.4K</div>
+        <div class="r-top">Reels</div>
+        <div class="r-grad"></div>
+        <div class="r-meta">
+          <div class="r-user"><span class="av">🌹</span>@ambalal.flower.decor</div>
+          <div class="r-cap">Every table gets the royal treatment 👑</div>
+          <div class="r-acts"><span>❤️ 842</span><span>💬 61</span><span>↗ 22</span></div>
+        </div>
+      </div>
+      <div class="reel-card" data-src="videos/reel-18204.mp4" data-cap="Bridal bouquet — white roses, hand-tied 💐">
+        <video src="videos/reel-18204.mp4" muted loop playsinline preload="metadata"></video>
+        <div class="r-plays">▶ 15.2K</div>
+        <div class="r-top">Reels</div>
+        <div class="r-grad"></div>
+        <div class="r-meta">
+          <div class="r-user"><span class="av">🌹</span>@ambalal.flower.decor</div>
+          <div class="r-cap">Bridal bouquet — white roses, hand-tied 💐</div>
+          <div class="r-acts"><span>❤️ 1.6K</span><span>💬 117</span><span>↗ 48</span></div>
+        </div>
+      </div>
+      <div class="reel-card" data-src="videos/reel-40591.mp4" data-cap="Our flowers, her happiest walk 🌸">
+        <video src="videos/reel-40591.mp4" muted loop playsinline preload="metadata"></video>
+        <div class="r-plays">▶ 22.1K</div>
+        <div class="r-top">Reels</div>
+        <div class="r-grad"></div>
+        <div class="r-meta">
+          <div class="r-user"><span class="av">🌹</span>@ambalal.flower.decor</div>
+          <div class="r-cap">Our flowers, her happiest walk 🌸</div>
+          <div class="r-acts"><span>❤️ 2.1K</span><span>💬 156</span><span>↗ 73</span></div>
+        </div>
+      </div>
+      <div class="reel-card" data-src="videos/reel-5217.mp4" data-cap="The ceremony view — pure magic ✨">
+        <video src="videos/reel-5217.mp4" muted loop playsinline preload="metadata"></video>
+        <div class="r-plays">▶ 7.6K</div>
+        <div class="r-top">Reels</div>
+        <div class="r-grad"></div>
+        <div class="r-meta">
+          <div class="r-user"><span class="av">🌹</span>@ambalal.flower.decor</div>
+          <div class="r-cap">The ceremony view — pure magic ✨</div>
+          <div class="r-acts"><span>❤️ 698</span><span>💬 44</span><span>↗ 19</span></div>
+        </div>
+      </div>
+      <div class="reel-card" data-src="videos/reel-1187.mp4" data-cap="Fresh flowers arrive every single morning 🌷">
+        <video src="videos/reel-1187.mp4" muted loop playsinline preload="metadata"></video>
+        <div class="r-plays">▶ 5.4K</div>
+        <div class="r-top">Reels</div>
+        <div class="r-grad"></div>
+        <div class="r-meta">
+          <div class="r-user"><span class="av">🌹</span>@ambalal.flower.decor</div>
+          <div class="r-cap">Fresh flowers arrive every single morning 🌷</div>
+          <div class="r-acts"><span>❤️ 512</span><span>💬 31</span><span>↗ 12</span></div>
+        </div>
+      </div>
+      <a class="follow-card" href="https://www.instagram.com/" target="_blank" rel="noopener">
+        <div class="ig">📷</div>
+        <b>Follow us on Instagram</b>
+        <small>@ambalal.flower.decor<br>New reels every week — latest work, offers &amp; behind-the-scenes</small>
+      </a>
     </div>
   </div>
 </section>
@@ -333,6 +450,41 @@ document.getElementById('enquiryForm').addEventListener('submit', function(e) {
   document.getElementById('success').classList.add('show');
   document.getElementById('enquiryForm').reset();
 });
+</script>
+
+<script>
+(function(){
+  var modal = document.createElement('div');
+  modal.className = 'reel-modal';
+  modal.innerHTML = '<button class="m-close" aria-label="Close">&times;</button><video controls playsinline></video><div class="m-cap"></div>';
+  document.body.appendChild(modal);
+  var mVideo = modal.querySelector('video'), mCap = modal.querySelector('.m-cap');
+  function openReel(card){
+    mVideo.src = card.getAttribute('data-src');
+    mCap.textContent = card.getAttribute('data-cap');
+    modal.classList.add('open');
+    mVideo.play().catch(function(){});
+  }
+  function closeReel(){ modal.classList.remove('open'); mVideo.pause(); mVideo.removeAttribute('src'); mVideo.load(); }
+  document.querySelectorAll('.reel-card').forEach(function(c){
+    c.addEventListener('click', function(){ openReel(c); });
+  });
+  modal.querySelector('.m-close').addEventListener('click', closeReel);
+  modal.addEventListener('click', function(e){ if(e.target === modal) closeReel(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeReel(); });
+
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        var v = en.target;
+        if(en.isIntersecting){ v.play().catch(function(){}); } else { v.pause(); }
+      });
+    }, {threshold: 0.4});
+    document.querySelectorAll('.reel-card video, .hero-video').forEach(function(v){ io.observe(v); });
+  } else {
+    document.querySelectorAll('.reel-card video, .hero-video').forEach(function(v){ v.play().catch(function(){}); });
+  }
+})();
 </script>
 
 </body>

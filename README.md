@@ -49,3 +49,18 @@ Form submissions POST to a Base44 backend function which saves them to an `Enqui
 
 ---
 *Built with care for Ambalal Flower Decor. All rights reserved by the client.*
+
+## 🎬 Reels Wall — swapping placeholder clips with real reels
+
+The website's "Watch us in action" section plays 6 vertical videos from `videos/` (Instagram-style, autoplay, click to open fullscreen with sound) plus a looping hero background video.
+
+Currently these are **royalty-free placeholder clips** (Mixkit license — free for commercial use). To replace with the client's real reels:
+
+1. Get 6 vertical (9:16) reels from Mohit (WhatsApp se hi aa jayenge).
+2. Convert/trim to ~10-20 sec each, keep files small (<5 MB). No watermark.
+3. Replace the files in `videos/` **keeping the same names** (`reel-5213.mp4` → rename to match), or update the 6 `src`/`data-src` paths in `index.html`.
+4. Update captions (`data-cap` + `.r-cap` text) and the play/like counts.
+5. Update the follow-card link to the client's real Instagram profile URL.
+6. Commit & push — GitHub Pages auto-redeploys in ~1 min.
+
+Tip: real reels = the strongest selling asset. Film mandap setup time-lapses, flower market trips, before/after venue shots.
