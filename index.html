@@ -245,7 +245,18 @@
   </div>
 </section>
 
-<script async src="//www.instagram.com/embed.js"></script>
+<script>
+(function(){
+  var s = document.createElement('script');
+  s.async = true; s.src = '//www.instagram.com/embed.js';
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting) { document.body.appendChild(s); io.disconnect(); } });
+    }, {rootMargin: '500px'});
+    io.observe(document.getElementById('work'));
+  } else { document.body.appendChild(s); }
+})();
+</script>
 
 
 <section id="packages">
