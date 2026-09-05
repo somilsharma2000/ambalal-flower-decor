@@ -64,3 +64,12 @@ Currently these are **royalty-free placeholder clips** (Mixkit license — free 
 6. Commit & push — GitHub Pages auto-redeploys in ~1 min.
 
 Tip: real reels = the strongest selling asset. Film mandap setup time-lapses, flower market trips, before/after venue shots.
+
+## v4 — Conversion upgrade (Sept 2026)
+- **Hero**: REAL photo of Mohit's own work — "Red. Gold. Glory." wedding at Jai Mahal Palace (entry arches, floral pillars, gold seating) with slow cinematic zoom; "Watch the real reel" opens a lightbox with the real sangeet reel embed (loads only on click — zero upfront cost). Stock video removed.
+- **Scarcity framing**: "Check Your Date" CTAs, Nov–Feb season urgency line, honest "80+ Real Events on Instagram" stat.
+- **3-step booking process** (WhatsApp → same-day quote → on-site setup) for remote/NRI couples.
+- **10-question FAQ** targeting real Google searches + FAQPage JSON-LD schema for featured snippets.
+- **"For Wedding Planners" B2B section** — his actual referral pipeline (The Wedding Art, The Stagecraft, Jagdish Studio).
+- **Perf**: Instagram embeds lazy-load via IntersectionObserver; hero is a 337KB image, not a multi-MB video.
+- **OG image**: real hero photo (correct link previews on WhatsApp — where Indian couples share).

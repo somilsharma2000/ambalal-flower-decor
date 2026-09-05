@@ -8,7 +8,7 @@
 <meta name="keywords" content="wedding flower decoration jaipur, mandap decoration jaipur, haldi decoration, reception stage decor, baraat car decoration, florist jaipur">
 <meta property="og:title" content="A.L. Florist — Destination Wedding Florist, Jaipur">
 <meta property="og:description" content="Featured at Jai Mahal Palace & Fairmont Jaipur. Royal mandaps, haldi decor, reception stages — fresh flowers, honest pricing.">
-<meta property="og:image" content="https://media.base44.com/images/public/6a9ac2c84fd294ea9fdfa7b5/69fc8c141_generated_image.png">
+<meta property="og:image" content="https://somilsharma2000.github.io/ambalal-flower-decor/images/hero-red-gold.jpg">
 <meta property="og:type" content="business.business">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🌹</text></svg>">
 <script type="application/ld+json">
@@ -32,7 +32,7 @@
   nav .links a{color:#e8d8c8;text-decoration:none;font-family:Arial,sans-serif;font-size:14px}
   nav .links a:hover{color:var(--gold-light)}
   nav a.btn-nav{background:var(--gold);color:var(--maroon-dark);padding:10px 22px;border-radius:8px;text-decoration:none;font-family:Arial,sans-serif;font-weight:bold;font-size:14px}
-  header.hero{position:relative;min-height:88vh;display:flex;align-items:center;background:linear-gradient(180deg,rgba(42,7,16,.88),rgba(52,10,20,.62) 50%,rgba(42,7,16,.86)),url('https://media.base44.com/images/public/6a9ac2c84fd294ea9fdfa7b5/69fc8c141_generated_image.png') center/cover no-repeat}
+  header.hero{position:relative;min-height:88vh;display:flex;align-items:center;background:#2a0710 url('images/hero-red-gold.jpg') center/cover no-repeat}
   .hero-inner{max-width:720px;padding:60px 24px;color:#fff}
   .hero-inner h1{font-size:52px;line-height:1.15;margin:22px 0;text-shadow:0 2px 12px rgba(0,0,0,.5)}
   .hero-inner h1 em{color:var(--gold-light);font-style:italic}
@@ -78,6 +78,21 @@
   .quote{background:var(--cream);border-left:4px solid var(--gold);border-radius:0 12px 12px 0;padding:26px 30px;font-style:italic;font-size:17px;color:#4a3f38}
   .quote b{display:block;margin-top:12px;font-style:normal;font-family:Arial,sans-serif;font-size:14px;color:var(--maroon)}
 
+  /* v4: hosted real-photo card in gallery */
+  .real-photo-card{display:flex;flex-direction:column;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(109,26,45,.10);border:1px solid #eadfce}
+  .real-photo-card img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+  .real-photo-cap{font-size:12.5px;color:#7a6a60;padding:10px 12px;line-height:1.4;margin:0}
+  .real-photo-cap a{color:var(--maroon);font-weight:bold}
+  /* v4: real-photo hero with ken-burns + reel lightbox */
+  .hero-bg{position:absolute;inset:0;z-index:0;background:url('images/hero-red-gold.jpg') center/cover no-repeat;animation:kenburns 16s ease-in-out infinite alternate}
+  @keyframes kenburns{from{transform:scale(1) translateY(0)}to{transform:scale(1.09) translateY(-1.5%)}}
+  @media(prefers-reduced-motion:reduce){.hero-bg{animation:none}}
+  .reel-btn{display:block;margin-top:16px;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.45);color:#fff;font-family:Arial,sans-serif;font-size:14px;letter-spacing:.5px;padding:11px 20px;border-radius:999px;cursor:pointer;backdrop-filter:blur(4px);transition:background .2s,border-color .2s}
+  .reel-btn:hover{background:rgba(0,0,0,.55);border-color:var(--gold-light)}
+  .reel-modal{position:fixed;inset:0;z-index:200;background:rgba(20,5,10,.92);display:none;align-items:center;justify-content:center;padding:20px}
+  .reel-modal.open{display:flex}
+  .reel-modal .close{position:absolute;top:18px;right:22px;background:none;border:none;color:#fff;font-size:34px;cursor:pointer;line-height:1}
+  .reel-modal iframe{width:360px;max-width:92vw;height:640px;max-height:86vh;border-radius:12px;border:none}
   /* v4: urgency, steps, faq */
   .hero-urgency{margin:18px 0 6px;font-family:Arial,sans-serif;font-size:14px;letter-spacing:.3px;color:#ffd98a;background:rgba(255,255,255,.08);border:1px solid rgba(255,217,138,.35);display:inline-block;padding:9px 16px;border-radius:999px;backdrop-filter:blur(4px)}
   .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px;max-width:1000px;margin:0 auto}
@@ -108,10 +123,8 @@
   .reels-row{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 14px;-webkit-overflow-scrolling:touch}
   .reels-row::-webkit-scrollbar{height:8px}
   .reels-row::-webkit-scrollbar-thumb{background:#d9c9b8;border-radius:4px}
-  .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
   .hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(42,7,16,.88) 0%,rgba(52,10,20,.55) 42%,rgba(52,10,20,.50) 62%,rgba(42,7,16,.86) 100%);z-index:1}
   header.hero > .wrap{position:relative;z-index:2;width:100%}
-  @media(prefers-reduced-motion:reduce){.hero-video{display:none}}
   /* FORM */
   .form-card{max-width:640px;margin:0 auto;background:#fff;border:1px solid #eadfce;border-radius:16px;padding:40px 34px}
   .form-card h3{color:var(--maroon);font-size:24px;text-align:center;margin-bottom:4px}
@@ -167,7 +180,7 @@
 </nav>
 
 <header class="hero">
-  <video class="hero-video" autoplay muted loop playsinline preload="metadata" src="videos/reel-5213.mp4" aria-hidden="true"></video>
+  <div class="hero-bg" role="img" aria-label="Real wedding florals by A.L. Florist — entry arches and floral pillars at Jai Mahal Palace"></div>
   <div class="hero-shade"></div>
   <div class="hero-inner">
     <span class="tag">✿ A.L. Florist · Destination Weddings · Jaipur</span>
@@ -175,6 +188,7 @@
     <p>Trusted by wedding planners at <b>Jai Mahal Palace</b> &amp; <b>Fairmont Jaipur</b> — we design royal mandaps, haldi and reception decor with fresh flowers, honest pricing and on-time delivery, every single time.</p>
     <a class="cta" href="#book">🌸 Check Your Date</a>
     <a class="cta ghost" href="#work">See Real Work</a>
+    <button class="reel-btn" onclick="openReel()" aria-label="Play the real Jai Mahal Palace wedding reel">▶ Watch the real reel</button>
     <div class="hero-urgency">⚡ Nov–Feb palace dates fill 6–9 months ahead — couples book early, ask us today.</div>
     <div class="stats">
       <div><b>80+</b><span>Real Events on Instagram</span></div>
@@ -232,8 +246,9 @@
       <div class="ig-embed-wrap">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DJYmyxgzqn8/" data-instgrm-version="14"></blockquote>
       </div>
-      <div class="ig-embed-wrap">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CneYVf5pGji/" data-instgrm-version="14"></blockquote>
+      <div class="ig-embed-wrap real-photo-card">
+        <img src="images/realwork-grasswall.jpg" alt="Fresh baby's breath and marigold florals on a green backdrop — real A.L. Florist setup" loading="lazy">
+        <p class="real-photo-cap">Fresh baby's breath &amp; marigold backdrop — our own setup <a href="https://www.instagram.com/a.l.florist_jaipur/" target="_blank" rel="noopener">@a.l.florist_jaipur</a></p>
       </div>
     </div>
 
@@ -450,6 +465,33 @@
 
 <a class="wa-float" href="https://wa.me/9197829995530" aria-label="WhatsApp">💬</a>
 
+<div class="reel-modal" id="reelModal" onclick="closeReel(event)" role="dialog" aria-label="Real wedding reel from Jai Mahal Palace">
+  <button class="close" onclick="closeReel(event)" aria-label="Close">×</button>
+</div>
+<script>
+function openReel(){
+  var m = document.getElementById('reelModal');
+  if(!m.querySelector('iframe')){
+    var f = document.createElement('iframe');
+    f.setAttribute('src','https://www.instagram.com/reel/DH5xpnWNsnh/embed/');
+    f.setAttribute('title','Real sangeet reel — florals by A.L. Florist at Jai Mahal Palace');
+    f.setAttribute('allowfullscreen','true');
+    m.appendChild(f);
+  }
+  m.classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeReel(e){
+  if(e.target === document.getElementById('reelModal') || e.target.classList.contains('close')){
+    var m = document.getElementById('reelModal');
+    m.classList.remove('open');
+    var f = m.querySelector('iframe');
+    if(f){ f.src = f.src; }
+    document.body.style.overflow='';
+  }
+}
+document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ var m=document.getElementById('reelModal'); if(m.classList.contains('open')){ m.classList.remove('open'); document.body.style.overflow=''; } } });
+</script>
 <script>
 document.getElementById('enquiryForm').addEventListener('submit', function(e) {
   e.preventDefault();
