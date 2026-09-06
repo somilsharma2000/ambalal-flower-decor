@@ -8,13 +8,13 @@
 <meta name="keywords" content="wedding flower decoration jaipur, mandap decoration jaipur, haldi decoration, reception stage decor, baraat car decoration, florist jaipur">
 <meta property="og:title" content="A.L. Florist — Destination Wedding Florist, Jaipur">
 <meta property="og:description" content="Featured at Jai Mahal Palace & Fairmont Jaipur. Royal mandaps, haldi decor, reception stages — fresh flowers, honest pricing.">
-<meta property="og:image" content="https://somilsharma2000.github.io/ambalal-flower-decor/images/hero-red-gold.jpg">
+<meta property="og:image" content="https://somilsharma2000.github.io/ambalal-flower-decor/images/og-hero.jpg">
 <meta property="og:type" content="business.business">
 <meta property="og:url" content="https://somilsharma2000.github.io/ambalal-flower-decor/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="A.L. Florist — Wedding &amp; Mandap Flower Decorator, Jaipur">
 <meta name="twitter:description" content="Royal mandaps, haldi &amp; reception decor. Real palace-wedding work. WhatsApp for a same-day quote.">
-<meta name="twitter:image" content="https://somilsharma2000.github.io/ambalal-flower-decor/images/hero-red-gold.jpg">
+<meta name="twitter:image" content="https://somilsharma2000.github.io/ambalal-flower-decor/images/og-hero.jpg">
 <link rel="canonical" href="https://somilsharma2000.github.io/ambalal-flower-decor/">
 <link rel="preconnect" href="https://www.instagram.com">
 <link rel="dns-prefetch" href="https://scontent.cdninstagram.com">
@@ -264,6 +264,7 @@
       <p>Live posts from the wedding planners who booked us at Jai Mahal Palace &amp; Fairmont Jaipur — every one crediting our florals, <a href="https://www.instagram.com/a.l.florist_jaipur/" target="_blank" rel="noopener" style="color:var(--maroon);font-weight:bold">@a.l.florist_jaipur</a>. Real functions, real flowers, no stock photos.</p>
     </div>
 
+    <noscript><p style="text-align:center;background:rgba(109,26,45,.06);padding:14px;border-radius:10px;margin:18px 0">JavaScript is off — <a href="https://www.instagram.com/a.l.florist_jaipur/" target="_blank" rel="noopener" style="color:var(--maroon);font-weight:bold">see our real wedding work on Instagram &#8599;</a></p></noscript>
     <div class="trust-strip">
       <span class="trust-label">Trusted by planners &amp; venues</span>
       <span class="trust-badge"><svg class="seal"><use href="#ico-seal"/></svg>Jai Mahal Palace</span>
@@ -462,7 +463,7 @@
         <div class="row">
           <div>
             <label>Event Date</label>
-            <input type="date" id="event_date">
+            <input type="date" id="event_date" min="2026-09-06">
           </div>
           <div>
             <label>Approx Budget</label>
@@ -560,8 +561,6 @@ document.getElementById('enquiryForm').addEventListener('submit', function(e) {
   document.getElementById('enquiryForm').reset();
 });
 </script>
-
-
-
+<script>document.getElementById("event_date").min=new Date().toISOString().split("T")[0];</script>
 </body>
 </html>
