@@ -42,6 +42,7 @@
   nav a.btn-nav{background:var(--gold);color:var(--maroon-dark);padding:10px 22px;border-radius:8px;text-decoration:none;font-family:Arial,sans-serif;font-weight:bold;font-size:14px}
   header.hero{position:relative;min-height:88vh;display:flex;align-items:center;background:#2a0710 url('images/hero-red-gold.jpg') center/cover no-repeat}
   .hero-inner{max-width:720px;padding:60px 24px;color:#fff}
+  .hero-text-panel{background:rgba(18,4,8,.58);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:18px;padding:26px 30px;display:inline-block;box-shadow:0 8px 30px rgba(0,0,0,.25)}
   .hero-inner h1{font-size:52px;line-height:1.15;margin:22px 0;text-shadow:0 2px 12px rgba(0,0,0,.5)}
   .hero-inner h1 em{color:var(--gold-light);font-style:italic}
   .hero-inner p{font-size:19px;opacity:.95;margin-bottom:32px;max-width:560px}
@@ -110,14 +111,14 @@
   .hero-bg{position:absolute;inset:0;z-index:0;background:url('images/hero-red-gold.jpg') center/cover no-repeat;animation:kenburns 16s ease-in-out infinite alternate}
   @keyframes kenburns{from{transform:scale(1) translateY(0)}to{transform:scale(1.09) translateY(-1.5%)}}
   @media(prefers-reduced-motion:reduce){.hero-bg{animation:none}}
-  .reel-btn{display:block;margin-top:16px;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.45);color:#fff;font-family:Arial,sans-serif;font-size:14px;letter-spacing:.5px;padding:11px 20px;border-radius:999px;cursor:pointer;backdrop-filter:blur(4px);transition:background .2s,border-color .2s}
+  .reel-btn{display:block;margin-top:16px;background:rgba(15,3,6,.62);border:1px solid rgba(255,255,255,.45);color:#fff;font-family:Arial,sans-serif;font-size:14px;letter-spacing:.5px;padding:11px 20px;border-radius:999px;cursor:pointer;backdrop-filter:blur(4px);transition:background .2s,border-color .2s}
   .reel-btn:hover{background:rgba(0,0,0,.55);border-color:var(--gold-light)}
   .reel-modal{position:fixed;inset:0;z-index:200;background:rgba(20,5,10,.92);display:none;align-items:center;justify-content:center;padding:20px}
   .reel-modal.open{display:flex}
   .reel-modal .close{position:absolute;top:18px;right:22px;background:none;border:none;color:#fff;font-size:34px;cursor:pointer;line-height:1}
   .reel-modal iframe{width:360px;max-width:92vw;height:640px;max-height:86vh;border-radius:12px;border:none}
   /* v4: urgency, steps, faq */
-  .hero-urgency{margin:18px 0 6px;font-family:Arial,sans-serif;font-size:14px;letter-spacing:.3px;color:#ffd98a;background:rgba(255,255,255,.08);border:1px solid rgba(255,217,138,.35);display:inline-block;padding:9px 16px;border-radius:999px;backdrop-filter:blur(4px)}
+  .hero-urgency{margin:18px 0 6px;font-family:Arial,sans-serif;font-size:14px;letter-spacing:.3px;color:#ffd98a;background:rgba(15,3,6,.55);border:1px solid rgba(255,217,138,.35);display:inline-block;padding:9px 16px;border-radius:999px;backdrop-filter:blur(4px)}
   .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px;max-width:1000px;margin:0 auto}
   .step{background:#fff;border:1px solid #eadfce;border-radius:16px;padding:28px 24px;box-shadow:0 6px 18px rgba(109,26,45,.06);text-align:center}
   .step .n{width:52px;height:52px;margin:0 auto 14px;border-radius:50%;background:var(--maroon);color:var(--gold-light);font-family:Arial,sans-serif;font-size:22px;font-weight:bold;display:flex;align-items:center;justify-content:center}
@@ -226,13 +227,17 @@
   <div class="hero-bg" role="img" aria-label="Real wedding florals by A.L. Florist — entry arches and floral pillars at Jai Mahal Palace"></div>
   <div class="hero-shade"></div>
   <div class="hero-inner">
-    <span class="tag">✿ A.L. Florist · Destination Weddings · Jaipur</span>
-    <h1>Where every wedding <em>blooms</em> into a memory</h1>
-    <p>Trusted by wedding planners at <b>Jai Mahal Palace</b> &amp; <b>Fairmont Jaipur</b> — we design royal mandaps, haldi and reception decor with fresh flowers, honest pricing and on-time delivery, every single time.</p>
+    <div class="hero-text-panel">
+      <span class="tag">✿ A.L. Florist · Destination Weddings · Jaipur</span>
+      <h1>Where every wedding <em>blooms</em> into a memory</h1>
+      <p>Trusted by wedding planners at <b>Jai Mahal Palace</b> &amp; <b>Fairmont Jaipur</b> — we design royal mandaps, haldi and reception decor with fresh flowers, honest pricing and on-time delivery, every single time.</p>
+    </div>
+    <div style="margin-top:20px">
     <a class="cta" href="#book"><svg class="cta-ico"><use href="#ico-calendar"/></svg> Check Your Date</a>
     <a class="cta ghost" href="#work">See Real Work</a>
     <button class="reel-btn" onclick="openReel()" aria-label="Play the real Jai Mahal Palace wedding reel">▶ Watch the real reel</button>
     <div class="hero-urgency"><svg class="bolt"><use href="#ico-bolt"/></svg> Nov–Feb palace dates fill 6–9 months ahead — couples book early, ask us today.</div>
+    </div>
     <div class="stats">
       <div><b>80+</b><span>Real Events on Instagram</span></div>
       <div><b>5+</b><span>Years in Jaipur</span></div>
