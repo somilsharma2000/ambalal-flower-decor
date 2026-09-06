@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Update after deploy: replace URL below with the live domain
-Sitemap: https://ambalalflowerdecor.in/sitemap.xml
+Sitemap: https://somilsharma2000.github.io/ambalal-flower-decor/sitemap.xml
